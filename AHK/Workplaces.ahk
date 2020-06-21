@@ -30,8 +30,16 @@ Send, !{f4}
 
 return
 
+
+
 #f::
-Send, {f11}
+WinGetPos, winWidth, winHeight, , , A  ; "A" to get the active window's pos.
+if ( winWidth == -8 and winHeight == -8) {
+WinRestore, A
+} else
+{
+WinMaximize, A
+}
 
 return
 
@@ -49,3 +57,6 @@ return
 Run, Firefox.exe
 
 return
+
+#Enter::
+Run  shell:AppsFolder\Microsoft.WindowsTerminal_8wekyb3d8bbwe!App
