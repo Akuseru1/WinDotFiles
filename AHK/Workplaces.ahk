@@ -58,5 +58,9 @@ Run, Firefox.exe
 
 return
 
+#a::
+Run  shell:AppsFolder\Microsoft.WindowsCalculator_8wekyb3d8bbwe!App
+return
+
 #Enter::
 Run  shell:AppsFolder\Microsoft.WindowsTerminal_8wekyb3d8bbwe!App
