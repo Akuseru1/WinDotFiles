@@ -12,5 +12,3 @@
 
 
 SETX XDG_CONFIG_HOME "%HOMEPATH%\AppData\Local"
-
-PAUSE
