@@ -1,0 +1,11 @@
+a) Press “Windows Logo” + “R” keys on the keyboard.
+
+b) Type “appwiz.cpl” in the “Run” command box and press “ENTER”.
+
+c) In the “Programs and Features” window, click on the link “Turn Windows features on or off”.
+
+d) Check if the “.NET Framework 3.5 (includes .NET 2.0 and 3.0)” option is available in it.
+
+e) If yes, then enable it and then click on “OK”.
+
+f) Follow the on-screen instructions to complete the installation and restart the computer, if prompted.
