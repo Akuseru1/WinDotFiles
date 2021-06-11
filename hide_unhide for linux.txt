@@ -1,1 +1,0 @@
-https://stackoverflow.com/questions/26704195/programmatically-hide-show-a-window-in-linux
