@@ -3,6 +3,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 Capslock::Escape
+return 
 
 #q::
 Send, !{f4}
@@ -11,15 +12,12 @@ return
 
 
 #f::
-WinGetPos, winWidth, winHeight, , , A  ; "A" to get the active window's pos.
-if ( winWidth == -8 and winHeight == -8) {
-WinRestore, A
-} else
-{
-WinMaximize, A
-}
+ WinGet MX, MinMax, A
+ If MX
+    WinRestore A
+ Else WinMaximize A
 
-return
+return 
 
 #u::
 Run, C:\Program Files\Unity Hub\Unity Hub.exe
@@ -40,8 +38,6 @@ return
 Run  shell:AppsFolder\Microsoft.WindowsCalculator_8wekyb3d8bbwe!App
 return
 
-#Enter::
-Run  shell:AppsFolder\Microsoft.WindowsTerminal_8wekyb3d8bbwe!App
-
 !Space::
 Run cmd /K "cd C:\%HOMEPATH%\"
+return
