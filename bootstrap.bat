@@ -13,7 +13,9 @@ scoop bucket add nerd-fonts ^
 & scoop install firefox ^
 & scoop install autohotkey ^
 & scoop install git ^
-& copy AHK\shortcuts.exe "C:%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\shortcuts.exe" ^
+& copy AHK\Shortcuts.exe "C:%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Shortcuts.exe" ^
+& copy AHK\Desktops.exe "C:%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Desktops.exe" ^
 & start /B "shortcuts.exe" "C:%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\shortcuts.exe" ^
+& start /B "Desktops.exe" "C:%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Desktops.exe" ^
 & Colemak\colemak\setup.exe ^
 & pause
