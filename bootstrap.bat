@@ -13,6 +13,8 @@ scoop bucket add nerd-fonts ^
 & scoop install firefox ^
 & scoop install autohotkey ^
 & scoop install git ^
+& scoop install sublime-text ^
+& scoop install neovim ^
 & copy AHK\Shortcuts.exe "C:%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Shortcuts.exe" ^
 & copy AHK\Desktops.exe "C:%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Desktops.exe" ^
 & start /B "shortcuts.exe" "C:%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\shortcuts.exe" ^

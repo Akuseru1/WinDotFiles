@@ -45,25 +45,6 @@ Run cmd /K "cd C:\%HOMEPATH%\"
 return
 
 #c:: 
-IfWinExist, Notepad
-{
-  If Hidden
-  {
-    WinShow
-    WinActivate
-  }
-  Else
-  {
-  WinHide
-  }
-  Hidden := !Hidden ;Toggle hidden
-  Return
-  } else {
-    Run notepad
-    return
-  }
-
-#+c:: 
 IfWinExist, Sublime
 {
   If Hidden
@@ -79,5 +60,25 @@ IfWinExist, Sublime
   Return
   } else {
     Run subl
+    return
+  }
+
+
+#+c:: 
+IfWinExist, Notepad
+{
+  If Hidden
+  {
+    WinShow
+    WinActivate
+  }
+  Else
+  {
+  WinHide
+  }
+  Hidden := !Hidden ;Toggle hidden
+  Return
+  } else {
+    Run notepad
     return
   }
