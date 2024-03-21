@@ -1,1 +1,0 @@
-add the hidden_recipient to the email of your gpg key !! (line 165)
